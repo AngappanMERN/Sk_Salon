@@ -12,9 +12,9 @@ export default function Navbar() {
     const [isMobilePagesOpen, setIsMobilePagesOpen] = useState(false);
 
     return (
-        <header className="relative lg:fixed lg:top-0 w-full flex items-center justify-between bg-[#e9e6e2] h-24 pr-6 z-50 shadow-md">
+        <header className="relative xl:fixed xl:top-0 w-full flex items-center justify-between bg-[#e9e6e2] h-24 pr-6 z-50 shadow-md">
             {/* Left Logo Section */}
-            <div className="flex items-center gap-4 bg-[#c79a5b] h-24 px-4 lg:px-16">
+            <div className="flex items-center gap-4 bg-[#c79a5b] h-24 px-4 xl:px-16">
                 <BsScissors className="text-2xl md:text-4xl text-black" />
 
                 <h1 className="text-2xl md:text-4xl font-serif font-semibold tracking-wide text-black">
@@ -23,7 +23,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Menu */}
-            <nav className="hidden lg:flex gap-8 text-xl font-medium tracking-wide text-bold">
+            <nav className="hidden xl:flex gap-8 text-xl font-medium tracking-wide text-bold">
                 <Link to="/#home" className="text-black hover:text-[#c79a5b] transition duration-300 active:text-[#c79a5b]">HOME</Link>
                 <Link to="/#about" className="text-black hover:text-[#c79a5b] transition duration-300">ABOUT</Link>
                 <Link to="/#service" className="text-black hover:text-[#c79a5b] transition duration-300">SERVICE</Link>
@@ -71,7 +71,7 @@ export default function Navbar() {
             </nav>
 
             {/* Social Icons (Desktop) */}
-            <div className="hidden lg:flex items-center gap-8">
+            <div className="hidden xl:flex items-center gap-8">
                 {/* Facebook */}
                 <div className="social-cross-wrapper scale-75"> {/* Scaled down slightly for desktop header if needed */}
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="social-link-box">
@@ -96,7 +96,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Button */}
             <button
-                className="lg:hidden text-3xl text-black z-50 transition-transform duration-200 hover:scale-110 active:scale-90"
+                className="xl:hidden text-3xl text-black z-50 transition-transform duration-200 hover:scale-110 active:scale-90"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-label="Toggle Menu"
             >
@@ -104,7 +104,7 @@ export default function Navbar() {
             </button>
 
             {/* Mobile Menu Overlay (Refined Style) */}
-            <div className={`absolute top-full right-0 w-[70%] max-w-[300px] bg-[#e9e6e2] z-40 flex flex-col items-center gap-4 py-8 shadow-2xl transition-all duration-300 ease-in-out origin-top-right lg:hidden ${isMenuOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 h-0 pointer-events-none'}`}>
+            <div className={`absolute top-full right-0 w-[70%] max-w-[300px] bg-[#e9e6e2] z-40 flex flex-col items-center gap-4 py-8 shadow-2xl transition-all duration-300 ease-in-out origin-top-right xl:hidden ${isMenuOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 h-0 pointer-events-none'}`}>
                 <Link to="/#home" className="text-lg font-medium text-black hover:text-[#c79a5b]" onClick={() => setIsMenuOpen(false)}>HOME</Link>
                 <Link to="/#about" className="text-lg font-medium text-black hover:text-[#c79a5b]" onClick={() => setIsMenuOpen(false)}>ABOUT</Link>
                 <Link to="/#service" className="text-lg font-medium text-black hover:text-[#c79a5b]" onClick={() => setIsMenuOpen(false)}>SERVICE</Link>

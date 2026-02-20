@@ -107,8 +107,8 @@ client/
 - **Body Font**: UI Standard (Segoe UI, Verdana)
 
 ## Technical Implementation Details
-- **Responsive Navbar Positioning**: The navbar uses `relative` positioning on mobile to scroll with content, and `fixed` positioning on desktop (`lg:fixed`) for accessibility.
-- **Header Offset**: `App.jsx` includes a spacer `<div className="hidden lg:block h-20"></div>` that only adds height on desktop to offset the fixed navbar, preventing visual gaps on mobile.
+- **Responsive Navbar Positioning**: The navbar uses `relative` positioning on mobile/tablet (up to 1024px) to scroll with content, and `fixed` positioning on desktop (`xl:fixed`, 1280px+) for constant accessibility. This specifically ensures the iPad Pro natively displays the mobile hamburger menu.
+- **Dynamic Header Offset**: `App.jsx` includes a spacer `<div className="hidden xl:block h-24"></div>` that precisely matches the desktop navbar's height (`24`), offsetting content perfectly to prevent visual gaps. This ensures a clean layout on iPad Pros without lingering empty gaps.
 
 ---
 *Created as part of the AngappanMERN/Salone_sample_Project.*

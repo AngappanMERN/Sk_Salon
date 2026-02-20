@@ -38,7 +38,7 @@ function App() {
       <BrowserRouter>
         <ScrollToAnchor />
         <Navbar />
-        <div className="hidden lg:block h-20"></div> {/* Spacer for fixed navbar */}
+        <div className="hidden xl:block h-24"></div> {/* Spacer for fixed navbar */}
         <Routes>
           <Route path="/" element={
             <>

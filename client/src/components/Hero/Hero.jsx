@@ -9,11 +9,11 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <section className="min-h-[85vh] lg:min-h-screen h-auto lg:h-[calc(100vh-15px)] bg-[#f5f1ed] flex items-center overflow-hidden">
-      <div className="grid lg:grid-cols-2 grid-cols-1 w-full h-full">
+    <section className="min-h-[85vh] xl:min-h-screen h-auto xl:h-[calc(100vh-15px)] bg-[#f5f1ed] flex items-center overflow-hidden">
+      <div className="grid xl:grid-cols-2 grid-cols-1 w-full h-full">
 
         {/* LEFT SIDE */}
-        <div className="relative flex flex-col justify-center items-start text-left px-6 lg:px-20 py-16 md:py-32 lg:py-0 space-y-6 lg:space-y-12 overflow-hidden">
+        <div className="relative flex flex-col justify-center items-start text-left px-6 xl:px-20 py-16 md:py-32 xl:py-0 space-y-6 xl:space-y-12 overflow-hidden">
           {/* Background Image (Light/Faint) */}
           <div className="absolute inset-0 z-0">
             <img
@@ -32,7 +32,7 @@ function Hero() {
             </h2>
 
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-semibold text-black leading-tight">
+            <h1 className="text-4xl sm:text-6xl xl:text-7xl font-serif font-semibold text-black leading-tight">
               Beauty Salon <br />
               Fashion for <br />
               Women
@@ -79,7 +79,7 @@ function Hero() {
         </div>
 
         {/* RIGHT SIDE: Auto slider with right-side thumbnails */}
-        <div className="relative h-[40vh] lg:h-full overflow-hidden">
+        <div className="relative h-[40vh] xl:h-full overflow-hidden">
           <div className="w-full h-full relative">
             <SliderController />
           </div>
@@ -147,7 +147,7 @@ function SliderController() {
             key={idx}
             src={img.src}
             alt={img.alt}
-            className="w-full h-full object-cover flex-shrink-0"
+            className="w-full h-full object-cover shrink-0"
           />
         ))}
       </div>
@@ -156,19 +156,19 @@ function SliderController() {
       <div className="absolute bottom-0 right-0 flex gap-[3px] z-20">
         <button
           onClick={prevSlide}
-          className="bg-[#cb9e5e] text-[#1a1a1a] w-16 h-14 lg:w-[80px] lg:h-[65px] flex items-center justify-center hover:bg-[#b0854c] transition-colors"
+          className="bg-[#cb9e5e] text-[#1a1a1a] w-16 h-14 xl:w-[80px] xl:h-[65px] flex items-center justify-center hover:bg-[#b0854c] transition-colors"
           aria-label="Previous slide"
         >
-          <svg className="w-6 h-6 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 xl:w-8 xl:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
           </svg>
         </button>
         <button
           onClick={nextSlide}
-          className="bg-[#c29555] text-[#1a1a1a] w-16 h-14 lg:w-[80px] lg:h-[65px] flex items-center justify-center hover:bg-[#b0854c] transition-colors"
+          className="bg-[#c29555] text-[#1a1a1a] w-16 h-14 xl:w-[80px] xl:h-[65px] flex items-center justify-center hover:bg-[#b0854c] transition-colors"
           aria-label="Next slide"
         >
-          <svg className="w-6 h-6 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 xl:w-8 xl:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
           </svg>
         </button>
