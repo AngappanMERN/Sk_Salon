@@ -14,7 +14,7 @@ const Footer = () => {
                     <div className="lg:w-1/2 lg:px-18 flex flex-col items-center lg:items-start text-center lg:text-left">
                         <Link to="/" className="inline-block mb-6">
                             <h1 className="text-4xl text-[#c79a5b] font-serif font-bold flex justify-center lg:justify-start items-center gap-2">
-                                <BsScissors /> Salone
+                                <BsScissors /> SK Salon
                             </h1>
                         </Link>
                         <p className="mb-6 leading-relaxed">
@@ -98,7 +98,7 @@ const Footer = () => {
                     <p>
                         &copy;
                         <a href="#" className="border-b border-white text-[#c79a5b] hover:text-white">
-                            SK Salone
+                            SK Salon
                         </a>, All Right Reserved.
                     </p>
                 </div>

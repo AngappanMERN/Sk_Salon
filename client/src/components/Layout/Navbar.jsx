@@ -18,7 +18,7 @@ export default function Navbar() {
                 <BsScissors className="text-2xl md:text-4xl text-black" />
 
                 <h1 className="text-2xl md:text-4xl font-serif font-semibold tracking-wide text-black">
-                    Salone
+                    SK Salon
                 </h1>
             </div>
 
@@ -66,7 +66,7 @@ export default function Navbar() {
                         </div>
                     )}
                 </div>
-
+                 <Link to="/#booking" className="text-black hover:text-[#c79a5b] transition duration-300">BOOK APPOINTMENT</Link>
                 <Link to="/#contact" className="text-black hover:text-[#c79a5b] transition duration-300">CONTACT</Link>
             </nav>
 

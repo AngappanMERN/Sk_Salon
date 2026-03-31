@@ -11,6 +11,7 @@ import Members from './components/Team/Members';
 import Clients from './components/Testimonials/Clients';
 import Blog from './components/Blog/Blog';
 import Footer from './components/Footer/Footer';
+import Booking from './components/Booking/Booking';
 
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -50,14 +51,17 @@ function App() {
               <div id="members"><Members /></div>
               <div id="clients"><Clients /></div>
               <div id="blog"><Blog /></div>
+              <div id="booking"><Booking /></div>
             </>
           } />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/price" element={<Price />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/booking" element={<Booking />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/members" element={<Members />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
         <div id="contact"><Footer /></div>
       </BrowserRouter>
