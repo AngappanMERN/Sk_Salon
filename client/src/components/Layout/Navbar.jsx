@@ -127,7 +127,6 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                <Link to="/#booking" className="text-lg font-medium text-black hover:text-[#c79a5b]" onClick={() => setIsMenuOpen(false)}>BOOK APPOINTMENT</Link>
                 <Link to="/#contact" className="text-lg font-medium text-black hover:text-[#c79a5b]" onClick={() => setIsMenuOpen(false)}>CONTACT</Link>
 
 

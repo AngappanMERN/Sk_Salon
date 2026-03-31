@@ -39,7 +39,7 @@ const Booking = () => {
         time: formatTime12Hour(formData.time)
       };
 
-      const response = await fetch(`http://${window.location.hostname}:5000/api/appointments`, {
+      const response = await fetch('http://localhost:5000/api/appointments', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
